@@ -10,7 +10,7 @@
 	<Name><![CDATA[Lithium_Supply_Chain1]]></Name>
 	<EngineVersion>6</EngineVersion>
 	<JavaPackageName><![CDATA[lithium_supply_chain]]></JavaPackageName>
-	<ModelTimeUnit><![CDATA[Hour]]></ModelTimeUnit>
+	<ModelTimeUnit><![CDATA[Year]]></ModelTimeUnit>
 	<ActiveObjectClasses>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
@@ -40,7 +40,7 @@
 				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
 				<RotateAnimationVertically>false</RotateAnimationVertically>
 				<VelocityCode Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
+					<Code><![CDATA[1]]></Code>
 					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 				</VelocityCode>
 				<PhysicalLength Class="CodeUnitValue">
@@ -84,11 +84,11 @@
 					<OccurrenceDate>1650528000000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
 						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
@@ -111,23 +111,8 @@
 			<ConnectionsId>1650499696025</ConnectionsId>
 			<Variables>
 				<Variable Class="AuxVariable">
-					<Id>1650836528389</Id>
-					<Name><![CDATA[Lithium_Demand]]></Name>
-					<X>70</X><Y>750</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[0]]></Formula>
-						<Value><![CDATA[0]]></Value>
-						<Color/>
-					</Properties>
-
-				</Variable>
-				<Variable Class="AuxVariable">
 					<Id>1650836555098</Id>
-					<Name><![CDATA[PR_delta]]></Name>
+					<Name><![CDATA[pr_delta]]></Name>
 					<Description><![CDATA[Increase in production per year]]></Description>
 					<X>330</X><Y>740</Y>
 					<Label><X>0</X><Y>-20</Y></Label>
@@ -135,96 +120,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[1.27]]></Formula>
-						<Value><![CDATA[0]]></Value>
-						<Color/>
-					</Properties>
-
-				</Variable>
-				<Variable Class="AuxVariable">
-					<Id>1651181446795</Id>
-					<Name><![CDATA[Max_pop]]></Name>
-					<X>90</X><Y>840</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[10]]></Formula>
-						<Value><![CDATA[0]]></Value>
-						<Color/>
-					</Properties>
-
-				</Variable>
-				<Variable Class="AuxVariable">
-					<Id>1651181501738</Id>
-					<Name><![CDATA[Min_pop]]></Name>
-					<X>130</X><Y>900</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[0.82]]></Formula>
-						<Value><![CDATA[0]]></Value>
-						<Color/>
-					</Properties>
-
-				</Variable>
-				<Variable Class="AuxVariable">
-					<Id>1651181538930</Id>
-					<Name><![CDATA[pop_r]]></Name>
-					<X>250</X><Y>920</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[0.046]]></Formula>
-						<Value><![CDATA[0]]></Value>
-						<Color/>
-					</Properties>
-
-				</Variable>
-				<Variable Class="AuxVariable">
-					<Id>1651181607480</Id>
-					<Name><![CDATA[pt]]></Name>
-					<X>360</X><Y>910</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[2014]]></Formula>
-						<Value><![CDATA[0]]></Value>
-						<Color/>
-					</Properties>
-
-				</Variable>
-				<Variable Class="AuxVariable">
-					<Id>1651181649744</Id>
-					<Name><![CDATA[year]]></Name>
-					<X>440</X><Y>900</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[2020]]></Formula>
-						<Value><![CDATA[0]]></Value>
-						<Color/>
-					</Properties>
-
-				</Variable>
-				<Variable Class="AuxVariable">
-					<Id>1651181723260</Id>
-					<Name><![CDATA[Population]]></Name>
-					<X>290</X><Y>820</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[1 + ((0.27 * (time()-1)))]]></Formula>
 						<Value><![CDATA[0]]></Value>
 						<Color/>
 					</Properties>
@@ -371,7 +267,7 @@
 					<EquationStyle>classic</EquationStyle>
 					<Width>20</Width>
 					<Height>20</Height>
-						<InitialValue><![CDATA[0]]></InitialValue>
+						<InitialValue><![CDATA[20600]]></InitialValue>
 						<Color>-4565549</Color>
 					</Properties>
 				</Variable>
@@ -387,7 +283,7 @@
 					<EquationStyle>classic</EquationStyle>
 					<Width>20</Width>
 					<Height>20</Height>
-						<InitialValue><![CDATA[0]]></InitialValue>
+						<InitialValue><![CDATA[40000]]></InitialValue>
 						<Color>-4565549</Color>
 					</Properties>
 				</Variable>
@@ -403,7 +299,7 @@
 					<EquationStyle>classic</EquationStyle>
 					<Width>20</Width>
 					<Height>20</Height>
-						<InitialValue><![CDATA[0]]></InitialValue>
+						<InitialValue><![CDATA[6200]]></InitialValue>
 						<Color>-4565549</Color>
 					</Properties>
 				</Variable>
@@ -419,7 +315,7 @@
 					<EquationStyle>classic</EquationStyle>
 					<Width>20</Width>
 					<Height>20</Height>
-						<InitialValue><![CDATA[0]]></InitialValue>
+						<InitialValue><![CDATA[14000]]></InitialValue>
 						<Color>-4565549</Color>
 					</Properties>
 				</Variable>
@@ -435,7 +331,7 @@
 					<EquationStyle>classic</EquationStyle>
 					<Width>20</Width>
 					<Height>20</Height>
-						<InitialValue><![CDATA[0]]></InitialValue>
+						<InitialValue><![CDATA[900]]></InitialValue>
 						<Color>-4565549</Color>
 					</Properties>
 				</Variable>
@@ -451,7 +347,7 @@
 					<EquationStyle>classic</EquationStyle>
 					<Width>20</Width>
 					<Height>20</Height>
-						<InitialValue><![CDATA[0]]></InitialValue>
+						<InitialValue><![CDATA[1200]]></InitialValue>
 						<Color>-4565549</Color>
 					</Properties>
 				</Variable>
@@ -467,7 +363,7 @@
 					<EquationStyle>classic</EquationStyle>
 					<Width>20</Width>
 					<Height>20</Height>
-						<InitialValue><![CDATA[0]]></InitialValue>
+						<InitialValue><![CDATA[1400]]></InitialValue>
 						<Color>-4565549</Color>
 					</Properties>
 				</Variable>
@@ -483,7 +379,7 @@
 					<EquationStyle>classic</EquationStyle>
 					<Width>20</Width>
 					<Height>20</Height>
-						<InitialValue><![CDATA[0]]></InitialValue>
+						<InitialValue><![CDATA[1900]]></InitialValue>
 						<Color>-4565549</Color>
 					</Properties>
 				</Variable>
@@ -651,7 +547,7 @@
 					<Id>1651176568800</Id>
 					<Name><![CDATA[Global_ref_trade]]></Name>
 					<X>1380</X><Y>300</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
+					<Label><X>-855</X><Y>-415</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -682,13 +578,14 @@
 				<Variable Class="Flow">
 					<Id>1650835089390</Id>
 					<Name><![CDATA[Ch_PR]]></Name>
+					<Unit>tonnes</Unit> 
 					<X>60</X><Y>50</Y>
 					<Label><X>0</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1650834259905" TargetId="1650834773741" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[20600]]></Formula>
+						<Formula><![CDATA[(Chile_Resource-(getEngine().getNextStepTime()-time())*20600<0 ? 0 : 20600)*pr_delta]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
@@ -701,13 +598,14 @@
 				<Variable Class="Flow">
 					<Id>1650835284703</Id>
 					<Name><![CDATA[AUS_PR]]></Name>
+					<Unit>tonnes</Unit> 
 					<X>60</X><Y>150</Y>
 					<Label><X>0</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1650834151224" TargetId="1650834779688" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[40000]]></Formula>
+						<Formula><![CDATA[(AUS_Resource-(getEngine().getNextStepTime()-time())*40000<0 ? 0 : 40000)*pr_delta]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
@@ -720,13 +618,14 @@
 				<Variable Class="Flow">
 					<Id>1650835315387</Id>
 					<Name><![CDATA[Arg_PR]]></Name>
+					<Unit>tonnes</Unit> 
 					<X>60</X><Y>250</Y>
 					<Label><X>0</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1650834301961" TargetId="1650834784261" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[6200]]></Formula>
+						<Formula><![CDATA[(Arg_Resource-(getEngine().getNextStepTime()-time())*6200<0 ? 0 : 6200)*pr_delta]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
@@ -739,13 +638,14 @@
 				<Variable Class="Flow">
 					<Id>1650835343222</Id>
 					<Name><![CDATA[PRC_PR]]></Name>
+					<Unit>tonnes</Unit> 
 					<X>60</X><Y>340</Y>
 					<Label><X>0</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1650834286934" TargetId="1650834787362" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[14000]]></Formula>
+						<Formula><![CDATA[(PRC_Resource-(getEngine().getNextStepTime()-time())*14000<0 ? 0 : 14000)*pr_delta]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
@@ -758,13 +658,14 @@
 				<Variable Class="Flow">
 					<Id>1650835346526</Id>
 					<Name><![CDATA[US_PR]]></Name>
+					<Unit>tonnes</Unit> 
 					<X>60</X><Y>410</Y>
 					<Label><X>0</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1650834422515" TargetId="1650834791383" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[900]]></Formula>
+						<Formula><![CDATA[(US_Resource-(getEngine().getNextStepTime()-time())*900<0 ? 0 : 900)*pr_delta]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
@@ -777,13 +678,14 @@
 				<Variable Class="Flow">
 					<Id>1650835349517</Id>
 					<Name><![CDATA[Zim_PR]]></Name>
+					<Unit>tonnes</Unit> 
 					<X>60</X><Y>520</Y>
 					<Label><X>0</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1650834315263" TargetId="1650834794549" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[1200]]></Formula>
+						<Formula><![CDATA[(Zim_Resource-(getEngine().getNextStepTime()-time())*1200<0 ? 0 : 1200)*pr_delta]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
@@ -796,13 +698,14 @@
 				<Variable Class="Flow">
 					<Id>1650835352339</Id>
 					<Name><![CDATA[Port_PR]]></Name>
+					<Unit>tonnes</Unit> 
 					<X>60</X><Y>590</Y>
 					<Label><X>0</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1650834522162" TargetId="1650834799632" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[1400]]></Formula>
+						<Formula><![CDATA[(Port_Resource-(getEngine().getNextStepTime()-time())*1400<0 ? 0 : 1400)*pr_delta]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
@@ -815,13 +718,14 @@
 				<Variable Class="Flow">
 					<Id>1650835355590</Id>
 					<Name><![CDATA[Braz_PR]]></Name>
+					<Unit>tonnes</Unit> 
 					<X>60</X><Y>670</Y>
 					<Label><X>0</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1650834305955" TargetId="1650834804561" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[1900]]></Formula>
+						<Formula><![CDATA[(Braz_Resource-(getEngine().getNextStepTime()-time())*1900<0 ? 0 : 1900)*pr_delta]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
@@ -1201,7 +1105,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1651107929715" TargetId="1651176625979" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[.5821*Chile_raw_import
+						<Formula><![CDATA[(.5821*Chile_raw_import)
 ]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
@@ -1278,7 +1182,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SourceId="1651107929715" TargetId="1651176568800" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[.4179*Chile_raw_import]]></Formula>
+						<Formula><![CDATA[(.4179*Chile_raw_import)]]></Formula>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
@@ -1458,6 +1362,78 @@
 							<Point><X>240</X><Y>330</Y></Point>
 						</Points>
 					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1651425921383</Id>
+					<Name><![CDATA[raw_price]]></Name>
+					<X>90</X><Y>720</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1651425921381</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1651426021856</Id>
+					<Name><![CDATA[refined1_price]]></Name>
+					<X>90</X><Y>750</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[20000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1651426021854</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1651426043552</Id>
+					<Name><![CDATA[refined_final]]></Name>
+					<X>90</X><Y>780</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[24000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1651426043550</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
 				</Variable>
 			</Variables>
 			<Dependences>
@@ -1956,14 +1932,14 @@
 					<LineWidth>1</LineWidth>
 					<Delay>false</Delay>
 				</Link>
-				<Link SourceId="1651181446795" TargetId="1651181723260" Polarity="null">
+				<Link SourceId="1650834305955" TargetId="1650835355590" Polarity="null">
 					<Height>20.0</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>200</X><Y>-20</Y></Direction>
-					<Id>1651181728905</Id>
-					<Name><![CDATA[Max_pop - Population]]></Name>
-					<X>90</X><Y>840</Y>
-					<Label><X>40</X><Y>-50</Y></Label>
+					<Direction><X>100</X><Y>0</Y></Direction>
+					<Id>1651338060096</Id>
+					<Name><![CDATA[Braz_Resource - Braz_PR]]></Name>
+					<X>60</X><Y>670</Y>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
@@ -1971,13 +1947,118 @@
 					<LineWidth>1</LineWidth>
 					<Delay>false</Delay>
 				</Link>
-				<Link SourceId="1651181501738" TargetId="1651181723260" Polarity="null">
+				<Link SourceId="1650834522162" TargetId="1650835352339" Polarity="null">
 					<Height>20.0</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>160</X><Y>-80</Y></Direction>
-					<Id>1651181806426</Id>
-					<Name><![CDATA[Min_pop - Population]]></Name>
-					<X>130</X><Y>900</Y>
+					<Direction><X>100</X><Y>0</Y></Direction>
+					<Id>1651342050887</Id>
+					<Name><![CDATA[Port_Resource - Port_PR]]></Name>
+					<X>60</X><Y>590</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650834315263" TargetId="1650835349517" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>100</X><Y>0</Y></Direction>
+					<Id>1651342118063</Id>
+					<Name><![CDATA[Zim_Resource - Zim_PR]]></Name>
+					<X>60</X><Y>520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650834422515" TargetId="1650835346526" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>130</X><Y>0</Y></Direction>
+					<Id>1651342140949</Id>
+					<Name><![CDATA[US_Resource - US_PR]]></Name>
+					<X>60</X><Y>420</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650834286934" TargetId="1650835343222" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>100</X><Y>0</Y></Direction>
+					<Id>1651342165943</Id>
+					<Name><![CDATA[PRC_Resource - PRC_PR]]></Name>
+					<X>60</X><Y>340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650834301961" TargetId="1650835315387" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>100</X><Y>0</Y></Direction>
+					<Id>1651342201894</Id>
+					<Name><![CDATA[Arg_Resource - Arg_PR]]></Name>
+					<X>60</X><Y>250</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650834151224" TargetId="1650835284703" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>100</X><Y>0</Y></Direction>
+					<Id>1651342226907</Id>
+					<Name><![CDATA[AUS_Resource - AUS_PR]]></Name>
+					<X>60</X><Y>150</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650834259905" TargetId="1650835089390" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>100</X><Y>0</Y></Direction>
+					<Id>1651342256729</Id>
+					<Name><![CDATA[Chile_Resource - Ch_PR]]></Name>
+					<X>60</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650836555098" TargetId="1650835355590" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-170</X><Y>-70</Y></Direction>
+					<Id>1651343445192</Id>
+					<Name><![CDATA[pr_delta - Braz_PR]]></Name>
+					<X>330</X><Y>740</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1986,13 +2067,13 @@
 					<LineWidth>1</LineWidth>
 					<Delay>false</Delay>
 				</Link>
-				<Link SourceId="1651181538930" TargetId="1651181723260" Polarity="null">
-					<Height>-5.796</Height>
+				<Link SourceId="1650836555098" TargetId="1650835352339" Polarity="null">
+					<Height>20.0</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>40</X><Y>-100</Y></Direction>
-					<Id>1651181815114</Id>
-					<Name><![CDATA[pop_r - Population]]></Name>
-					<X>250</X><Y>920</Y>
+					<Direction><X>-170</X><Y>-150</Y></Direction>
+					<Id>1651344928475</Id>
+					<Name><![CDATA[pr_delta - Port_PR]]></Name>
+					<X>330</X><Y>740</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2001,14 +2082,14 @@
 					<LineWidth>1</LineWidth>
 					<Delay>false</Delay>
 				</Link>
-				<Link SourceId="1651181607480" TargetId="1651181723260" Polarity="null">
-					<Height>-23.142</Height>
+				<Link SourceId="1650836555098" TargetId="1650835349517" Polarity="null">
+					<Height>20.0</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>-70</X><Y>-90</Y></Direction>
-					<Id>1651181823341</Id>
-					<Name><![CDATA[pt - Population]]></Name>
-					<X>360</X><Y>910</Y>
-					<Label><X>40</X><Y>-50</Y></Label>
+					<Direction><X>-170</X><Y>-220</Y></Direction>
+					<Id>1651344982668</Id>
+					<Name><![CDATA[pr_delta - Zim_PR]]></Name>
+					<X>330</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
@@ -2016,14 +2097,74 @@
 					<LineWidth>1</LineWidth>
 					<Delay>false</Delay>
 				</Link>
-				<Link SourceId="1651181649744" TargetId="1651181723260" Polarity="null">
-					<Height>-36.657</Height>
+				<Link SourceId="1650836555098" TargetId="1650835346526" Polarity="null">
+					<Height>20.0</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>-150</X><Y>-80</Y></Direction>
-					<Id>1651181843452</Id>
-					<Name><![CDATA[year - Population]]></Name>
-					<X>440</X><Y>900</Y>
-					<Label><X>40</X><Y>-50</Y></Label>
+					<Direction><X>-140</X><Y>-320</Y></Direction>
+					<Id>1651345003090</Id>
+					<Name><![CDATA[pr_delta - US_PR]]></Name>
+					<X>330</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650836555098" TargetId="1650835343222" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-170</X><Y>-400</Y></Direction>
+					<Id>1651345021291</Id>
+					<Name><![CDATA[pr_delta - PRC_PR]]></Name>
+					<X>330</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650836555098" TargetId="1650835315387" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-170</X><Y>-490</Y></Direction>
+					<Id>1651345036700</Id>
+					<Name><![CDATA[pr_delta - Arg_PR]]></Name>
+					<X>330</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650836555098" TargetId="1650835284703" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-170</X><Y>-590</Y></Direction>
+					<Id>1651345057992</Id>
+					<Name><![CDATA[pr_delta - AUS_PR]]></Name>
+					<X>330</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1650836555098" TargetId="1650835089390" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-170</X><Y>-690</Y></Direction>
+					<Id>1651345080312</Id>
+					<Name><![CDATA[pr_delta - Ch_PR]]></Name>
+					<X>330</X><Y>740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
@@ -2032,6 +2173,31 @@
 					<Delay>false</Delay>
 				</Link>
 			</Dependences>
+			<AnalysisData>
+    			<DataSet>
+					<Id>1651426956506</Id>
+					<Name><![CDATA[dataset1]]></Name>
+					<X>1450</X><Y>690</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>false</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1651478400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</RecurrenceCode>
+					<FreezeXAxis>true</FreezeXAxis>
+					<VerticalAxisExpression><![CDATA[PRC_ref]]></VerticalAxisExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+				</DataSet>
+			</AnalysisData>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1650499696025</Id>
@@ -2068,6 +2234,426 @@
 					<Z>0</Z>
 					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
 
+			<Presentation>
+    			<TimePlot>
+					<Id>1651342427040</Id>
+					<Name><![CDATA[VandV_data]]></Name>
+					<X>660</X><Y>720</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1651392000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>480</Width>
+					<Height>270</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>400</Width>
+						<Height>180</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>YEAR</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Chile refined]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-16728065</Color>
+					<Expression2><![CDATA[Chile_ref]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[China refined]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-65536</Color>
+					<Expression2><![CDATA[PRC_ref]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Korea refined]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-4565549</Color>
+					<Expression2><![CDATA[Korea_ref]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Japan refined]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset3]]></Expression>
+					<Color>-16777216</Color>
+					<Expression2><![CDATA[Japan_ref]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>SQUARE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[US refined]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset4]]></Expression>
+					<Color>-14774017</Color>
+					<Expression2><![CDATA[US_ref]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>TRIANGLE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[EU refined]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset5]]></Expression>
+					<Color>-10496</Color>
+					<Expression2><![CDATA[EU_ref]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[5]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1651425893029</Id>
+					<Name><![CDATA[total_vaule]]></Name>
+					<X>1710</X><Y>520</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1651478400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>420</Width>
+					<Height>250</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>290</Width>
+						<Height>190</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>WEST</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>50</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Chile Value]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-16728065</Color>
+					<Expression2><![CDATA[Chile_ref*refined_final]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[China Value]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-65536</Color>
+					<Expression2><![CDATA[PRC_ref*refined_final]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Korea Value]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-4565549</Color>
+					<Expression2><![CDATA[Korea_ref*refined_final]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Japan Value]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset3]]></Expression>
+					<Color>-16777216</Color>
+					<Expression2><![CDATA[Japan_ref*refined_final]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>SQUARE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[US value]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset4]]></Expression>
+					<Color>-14774017</Color>
+					<Expression2><![CDATA[US_ref*refined_final]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>TRIANGLE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[EU Value]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset5]]></Expression>
+					<Color>-10496</Color>
+					<Expression2><![CDATA[EU_ref*refined_final]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[12]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1651426932074</Id>
+					<Name><![CDATA[plot]]></Name>
+					<X>1360</X><Y>690</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1651478400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Dataset Title]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[dataset1]]></Expression>
+					<Color>-29696</Color>
+					<Expression2><![CDATA[0]]></Expression2>
+					<Expression2Flag>false</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[100]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1651440477285</Id>
+					<Name><![CDATA[Value_added]]></Name>
+					<X>1760</X><Y>240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1651478400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Chile VA]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-16728065</Color>
+					<Expression2><![CDATA[((Chile_asset-(Chile_raw_import-chi_ex_1))*raw_price)+(Chile_raw_import*refined1_price)+(Chile_ref*refined_final)]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[China VA]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-65536</Color>
+					<Expression2><![CDATA[((PRC_asset-(PRC_raw_import-prc_ex))*raw_price)+(PRC_raw_import*refined1_price)+(PRC_ref*refined_final)-(gb_tr_prc*refined1_price)]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Korea VA]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset2]]></Expression>
+					<Color>-4565549</Color>
+					<Expression2><![CDATA[(Korea_ref*refined_final)-(gb_tr_korea*refined1_price)+(Korea_raw_import*refined1_price)-(Korea_raw_import*raw_price)]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Japan VA]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset3]]></Expression>
+					<Color>-16777216</Color>
+					<Expression2><![CDATA[(Japan_ref*refined_final)-(gb_tr_japan*refined1_price)]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>SQUARE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[US VA]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset4]]></Expression>
+					<Color>-14774017</Color>
+					<Expression2><![CDATA[(US_ref*refined_final)-(gb_tr_us*refined1_price)+(US_raw_import*refined1_price)-(US_raw_import*raw_price)+(US_asset*raw_price)]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>TRIANGLE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[EU VA]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset5]]></Expression>
+					<Color>-10496</Color>
+					<Expression2><![CDATA[(EU_ref*refined_final)-(gb_tr_EU*refined1_price)+(EU_raw_import*refined1_price)-(EU_raw_import*raw_price)+(Port_asset*raw_price)]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>40</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[50]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+			</Presentation>
 
 				</Level>
 			</Presentation>
@@ -2159,6 +2745,15 @@
 			</Presentation>
 
 			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[raw_price]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[refined1_price]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[refined_final]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
